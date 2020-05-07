@@ -22,7 +22,7 @@ FROM alpine:latest
 
 RUN ARCHITECTURE=linux_arm                                                                    && \
     SHA256_DUPLICACY=162ecb3ea14ee28b2dccb3342f0446eab3bb0154cc7cadfb794551e81eb56cda         && \
-    SHA256_DUPLICACY_WEB=9381581171503788a9c31c60ea672bf0a0f3fc7d7537f83c24b318fef009b87f     && \
+    SHA256_DUPLICACY_WEB=bc6cf1823e485b8f8c833c3a6e5ace23ad194610ec4675c49427568c714b1437     && \
     VERSION_DUPLICACY=2.4.0                                                                   && \
     VERSION_DUPLICACY_WEB=1.3.0                                                               && \
                                                                                                  \
