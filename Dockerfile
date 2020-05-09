@@ -18,11 +18,11 @@ RUN mkdir -p /var/lib/dbus
 
 RUN ln -s /dev/stdout /var/log/duplicacy_web.log
 
-RUN ln -s ${_DIR_CONF}/settings.json  ${_DIR_WEB}/settings.json
-RUN ln -s ${_DIR_CONF}/duplicacy.json ${_DIR_WEB}/duplicacy.json
-RUN ln -s ${_DIR_CONF}/licenses.json  ${_DIR_WEB}/licenses.json
-RUN ln -s ${_DIR_CONF}/filters        ${_DIR_WEB}/filters
-RUN ln -s ${_DIR_CACHE}/stats         ${_DIR_WEB}/stats
+RUN ln -s ${DirCache}/settings.json  ${DirWeb}/settings.json
+RUN ln -s ${DirCache}/duplicacy.json ${DirWeb}/duplicacy.json
+RUN ln -s ${DirCache}/licenses.json  ${DirWeb}/licenses.json
+RUN ln -s ${DirCache}/filters        ${DirWeb}/filters
+RUN ln -s ${DirWeb}/stats         ${DirWeb}/stats
 
 EXPOSE 3875
 CMD [ "/usr/local/bin/entrypoint.sh" ]
