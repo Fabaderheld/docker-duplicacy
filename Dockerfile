@@ -11,8 +11,8 @@ RUN chmod +x /duplicacy/duplicacy_web
 COPY entry.sh /duplicacy/entry.sh
 RUN chmod +x /duplicacy/entry.sh
 RUN mkdir /config
-RUN cd /root && ln -s /config .duplicacy-web 
 COPY settings.json /config/
+RUN cd /root && ln -s /config .duplicacy-web 
 EXPOSE 3875
 
 ENTRYPOINT [ "/duplicacy/entry.sh" ]
